@@ -3645,7 +3645,9 @@ a.btn.btn-subscriptin i {
 
 	text-transform: uppercase;
 }
-
+option {
+	outline: none;
+}
 .contact-form textarea {
 	color: #aab5ca;
 
@@ -3705,7 +3707,8 @@ a.btn.btn-subscriptin i {
 }
 
 .contact-form input::-moz-placeholder,
-.contact-form input::placeholder {
+.contact-form input::placeholder,
+.contact-form select::placeholder {
 	color: #aab5ca;
 }
 
@@ -4779,7 +4782,8 @@ p.privacy-color {
 	font-size: 30px;
 }
 
-.basic-login input {
+.basic-login input,
+select {
 	width: 100%;
 
 	height: 60px;
@@ -4793,7 +4797,8 @@ p.privacy-color {
 	margin-bottom: 20px;
 }
 
-.basic-login label {
+.basic-login label,
+option {
 	color: #222;
 
 	display: block;
@@ -4803,7 +4808,8 @@ p.privacy-color {
 	color: #1b70f0;
 }
 
-.login-action input {
+.login-action input,
+option {
 	width: inherit;
 
 	height: auto;
@@ -4869,6 +4875,10 @@ p.privacy-color {
 
 		display: block;
 	}
+	.alert {
+		padding: 0 0;
+		display: none;
+	}
 }
 
 .alert {
@@ -4880,9 +4890,14 @@ p.privacy-color {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 0 25%;
+	padding: 0 0;
 	display: none;
 	transition: all 1s ease;
+}
+@media screen and (man-width: 1000px) {
+	.alert {
+		padding: 0 20%;
+	}
 }
 
 .alert .inner {

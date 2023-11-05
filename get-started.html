@@ -147,21 +147,39 @@
 			<!-- breadcrumb-area-end -->
 
 			<!-- login Area Strat-->
-			<div class="alert">
-				<div class="inner">
-					<h3>Note</h3>
-					<p>An email has been sent, We will get back to you shortly</p>
-				</div>
-			</div>
+
 			<div class="login-area pt-120 pb-120">
 				<div class="container">
+					<div class="alert">
+						<div class="inner">
+							<h3>Warning</h3>
+							<p>
+								Its like a box with a warning inside that say, "no payment
+								method available at the moment
+							</p>
+						</div>
+					</div>
 					<div class="row">
 						<div class="col-lg-8 offset-lg-2">
 							<div class="basic-login">
-								<h3 class="text-center mb-60">Please Fill This Form</h3>
+								<h3 class="text-center mb-60">Subscription</h3>
 
-								<form action="#">
-									<label for="name">Email Address <span>**</span></label>
+								<form action="#" id="sub-form">
+									<label for="cars">Choose a plan</label>
+
+									<select name="sub-plans" id="sub-plans">
+										<option value="basic-monthly">
+											Basic Hosting (monthly)
+										</option>
+										<option value="Advanced-monthly">
+											Advanced Hosting(monthly)
+										</option>
+										<option value="core=monthly">Core Hosting (monthly)</option>
+										<option value="basic-yearly">Basic Hosting (yearly)</option>
+										<option value="Advanced-yearly">
+											Advanced Hosting(yearly)
+										</option>
+									</select>
 
 									<input
 										id="name"
@@ -173,7 +191,10 @@
 
 									<div class="login-action mb-20 fix"></div>
 
-									<button class="btn btn-2 btn-black w-100 sub-started">
+									<button
+										type="submit"
+										class="btn btn-2 btn-black w-100 sub-started"
+									>
 										Submit
 									</button>
 								</form>

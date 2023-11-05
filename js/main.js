@@ -304,12 +304,23 @@
 		},
 	});
 
-	const formBtn = document.querySelector(".sub-started");
+	const subform = document.querySelector("#sub-form");
 	const aText = document.querySelector(".alert ");
 
-	formBtn.addEventListener("click", () => {
+	subform.addEventListener("submit", (e) => {
+		e.preventDefault();
+
 		aText.style.display = "flex";
+		subform.reset;
 	});
+	// document.addEventListener("DOMContentLoaded", () => {
+	// 	const formBtn = document.querySelector(".sub-started");
+	// 	const aText = document.querySelector(".alert ");
+
+	// 	formBtn.addEventListener("click", () => {
+	// 		aText.style.display = "flex";
+	// 	});
+	// });
 
 	// blog - active
 
