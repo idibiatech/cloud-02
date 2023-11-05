@@ -54,6 +54,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 
 	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
 }
 
 .img {
@@ -4868,4 +4869,23 @@ p.privacy-color {
 
 		display: block;
 	}
+}
+
+.alert {
+	width: 100%;
+	height: 10rem;
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 25%;
+	display: none;
+	transition: all 1s ease;
+}
+
+.alert .inner {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
 }
