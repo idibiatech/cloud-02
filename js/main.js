@@ -304,23 +304,37 @@
 		},
 	});
 
+	// const subform = document.querySelector("#sub-form");
+	// const aText = document.querySelector(".alert ");
+
+	// subform.addEventListener("submit", (e) => {
+	// 	e.preventDefault();
+
+	// 	aText.style.display = "flex";
+	// 	subform.reset;
+	// });
+
 	const subform = document.querySelector("#sub-form");
-	const aText = document.querySelector(".alert ");
+	const aText = document.querySelector(".alert");
 
 	subform.addEventListener("submit", (e) => {
 		e.preventDefault();
 
-		aText.style.display = "flex";
-		subform.reset;
-	});
-	// document.addEventListener("DOMContentLoaded", () => {
-	// 	const formBtn = document.querySelector(".sub-started");
-	// 	const aText = document.querySelector(".alert ");
+		// Check if the form fields are filled
+		const nameInput = document.querySelector("#name");
+		const subPlansSelect = document.querySelector("#sub-plans");
 
-	// 	formBtn.addEventListener("click", () => {
-	// 		aText.style.display = "flex";
-	// 	});
-	// });
+		if (nameInput.value.trim() !== "" && subPlansSelect.value !== "0") {
+			// If both the name input and sub-plans select have values, display the alert
+			aText.style.display = "flex";
+			subform.reset();
+		} else {
+			// Display an error message or handle the empty form fields case
+			// For example, you can show a validation error or provide user feedback.
+			// This code demonstrates an alert for empty fields:
+			alert("Please fill in all the required fields.");
+		}
+	});
 
 	// blog - active
 

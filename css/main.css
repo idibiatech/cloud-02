@@ -4894,6 +4894,9 @@ option {
 	padding: 4rem 0;
 	display: none;
 	transition: all 1s ease;
+	position: absolute;
+	z-index: 100;
+	left: 0;
 }
 @media screen and (man-width: 1000px) {
 	.alert {
