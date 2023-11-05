@@ -4908,3 +4908,6 @@ option {
 	background-color: rgb(255, 255, 255);
 	width: 100%;
 }
+.pricing-more-link a {
+	width: 100%;
+}
