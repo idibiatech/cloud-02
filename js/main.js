@@ -325,13 +325,9 @@
 		const subPlansSelect = document.querySelector("#sub-plans");
 
 		if (nameInput.value.trim() !== "" && subPlansSelect.value !== "0") {
-			// If both the name input and sub-plans select have values, display the alert
 			aText.style.display = "flex";
 			subform.reset();
 		} else {
-			// Display an error message or handle the empty form fields case
-			// For example, you can show a validation error or provide user feedback.
-			// This code demonstrates an alert for empty fields:
 			alert("Please fill in all the required fields.");
 		}
 	});
