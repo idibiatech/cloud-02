@@ -21,3 +21,21 @@ subform.addEventListener("submit", (e) => {
 		alert("Please fill in all the required fields.");
 	}
 });
+
+const storedData = JSON.parse(localStorage.getItem("cartPlans"));
+
+const total = document.querySelector(".total");
+// total.textContent = `$ ${
+
+// }`
+let itemTotal = 0;
+storedData.forEach((card) => {
+	itemTotal += parseFloat(card.price);
+	itemTotal = parseFloat(itemTotal.toFixed(2)); // Round to 2 decimal places
+});
+const totalFunc = () => {
+	// console.log(itemTotal);
+	total.textContent = `Total: $ ${itemTotal.toFixed(2)}`;
+};
+
+totalFunc();

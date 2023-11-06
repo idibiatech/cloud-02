@@ -4933,3 +4933,10 @@ option {
 		padding: 1rem;
 	}
 }
+#notes {
+	/* background-color: red; */
+}
+
+#notes::placeholder {
+	color: red;
+}

@@ -161,7 +161,7 @@
 					<div class="row">
 						<div class="col-lg-8 offset-lg-2">
 							<div class="basic-login">
-								<h3 class="text-center mb-60">Subscription</h3>
+								<h3 class="text-center mb-60">Billing details</h3>
 
 								<form action="#" id="sub-form">
 									<!-- <label for="cars">Choose a plan</label>
@@ -182,24 +182,42 @@
 
 									<input
 										id="email"
-										type="text"
+										type="email"
 										placeholder="Enter email address"
 									/>
 									<input id="fname" type="text" placeholder=" First name" />
 									<input id="lname" type="text" placeholder="Last name" />
+									<input id="pnumber" type="number" placeholder="Last name" />
+									<label for="notes">Additional information (optional):</label>
+									<textarea rows="4" cols="50" id="notes"> </textarea>
 
-									<div class="login-action mb-20 fix"></div>
-									<div class="">
+									<div class="total"></div>
+									<!-- <div class="">
 										<p>
 											Sorry, No payment method available at this moment. We will
 											send you an invoice when available
+										</p>
+									</div> -->
+									<div>
+										<p>
+											Make your payment directly into our bank account. Please
+											use your Order ID as the payment reference. Your order
+											will not be processed until the funds have been cleared in
+											our account.
+										</p>
+									</div>
+									<div>
+										<p>
+											Your personal data will be used to process your order,
+											support your experience throughout this website, and for
+											other purposes described in our privacy policy.
 										</p>
 									</div>
 									<button
 										type="submit"
 										class="btn btn-2 btn-black w-100 sub-started"
 									>
-										Submit
+										Place order
 									</button>
 								</form>
 							</div>
