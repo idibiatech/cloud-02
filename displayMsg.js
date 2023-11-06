@@ -1,4 +1,4 @@
-const subform = document.querySelector("#sub-form");
+// const subform = document.querySelector("#sub-form");
 const btnClick = document.querySelector(".sub-started");
 const aText = document.querySelector(".alert");
 
