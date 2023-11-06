@@ -19,7 +19,7 @@ if (storedData) {
 
 		const deleteElement = document.createElement("div");
 		deleteElement.innerHTML =
-			'<i class="fa fa-trash" aria-hidden="true" style="color: #ff0000;" ></i>';
+			'<i class="fa fa-trash deleteItem" aria-hidden="true" style="color: #ff0000;" ></i>';
 
 		deleteElement.className = "deleteItem";
 
