@@ -4885,3 +4885,35 @@ option {
 .pricing-more-link a {
 	width: 100%;
 }
+
+.hidden-name {
+	display: none !important;
+}
+
+.cartItemWrapper {
+	display: flex;
+	/* background-color: red; */
+	justify-content: space-between;
+	font-size: 1rem;
+	border: 1px solid black;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+
+.cartItemWrapper div {
+	width: 40%;
+	/* background-color: green; */
+	height: auto;
+	min-height: 4rem;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+	.cartItemWrapper {
+		font-size: 2rem;
+		/* border: 1px solid black; */
+		padding: 1rem;
+	}
+}
