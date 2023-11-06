@@ -79,4 +79,4 @@ if (storedData) {
 }
 
 // console.log(itemTotal);
-// totalFunc();
+totalFunc();
