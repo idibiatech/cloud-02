@@ -312,7 +312,7 @@
 					<div class="row">
 						<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
 							<div class="section-title text-center mb-70">
-								<h2>Price & Plans</h2>
+								<h2 class="plan-name">Price & Plans</h2>
 								<p>
 									Choose the best hosting plan for your website. Whether you
 									need a shared, VPS, reseller, cloud, or dedicated hosting, we
@@ -332,18 +332,20 @@
 									<img src="img/icon/p-01.png" alt="" />
 								</div>
 								<div class="pricin-title mb-20">
-									<h3>Cloud Hosting</h3>
+									<h3 class="plan-name">Cloud Hosting</h3>
 								</div>
 								<div class="price-body">
-									<h2><span>$</span> 11 <span class="month">/mo</span></h2>
+									<h2>
+										<span>$</span>
+										<div class="price">11</div>
+										<span class="month">/mo</span>
+									</h2>
 									<p>
 										Dynamo Cloud Ltd offers hosting plans that are secure,
 										reliable, and performing.
 									</p>
 								</div>
-								<!-- <div class="price-link">
-									<a href="#" class="btn btn-soft-border">Purchase Now</a>
-								</div> -->
+								<div class="add-cart btn btn-soft-border">Add to cart</div>
 							</div>
 						</div>
 						<div class="col-xl-4 col-lg-4 col-md-6">
@@ -355,19 +357,21 @@
 									<img src="img/icon/p-02.png" alt="" />
 								</div>
 								<div class="pricin-title mb-20">
-									<h3>VPS Hosting</h3>
+									<h3 class="plan-name">VPS Hosting</h3>
 								</div>
 								<div class="price-body">
-									<h2><span>$</span> 3.99 <span class="month">/mo</span></h2>
+									<h2>
+										<span>$</span>
+										<div class="price">3.99</div>
+										<span class="month">/mo</span>
+									</h2>
 									<p>
 										Dynamo Cloud Ltd provides VPS Hosting solutions that are
 										secure, reliable, and high-performing, tailored to meet your
 										specific needs.
 									</p>
 								</div>
-								<!-- <div class="price-link">
-									<a href="#" class="btn btn-soft-border">Purchase Now</a>
-								</div> -->
+								<div class="add-cart btn btn-soft-border">Add to cart</div>
 							</div>
 						</div>
 						<div class="col-xl-4 col-lg-4 col-md-6">
@@ -379,19 +383,21 @@
 									<img src="img/icon/p-03.png" alt="" />
 								</div>
 								<div class="pricin-title mb-20">
-									<h3>Shared Hosting</h3>
+									<h3 class="plan-name">Shared Hosting</h3>
 								</div>
 								<div class="price-body">
-									<h2><span>$</span> 1.99<span class="month">/mo</span></h2>
+									<h2>
+										<span>$</span>
+										<div class="price">1.99</div>
+										<span class="month">/mo</span>
+									</h2>
 									<p>
 										Dynamo Cloud Ltd’s Shared Hosting plans offer security,
 										reliability, and performance, making it an ideal choice for
 										beginners and small businesses.
 									</p>
 								</div>
-								<!-- <div class="price-link">
-									<a href="#" class="btn btn-soft-border">Purchase Now</a>
-								</div> -->
+								<div class="add-cart btn btn-soft-border">Add to cart</div>
 							</div>
 						</div>
 					</div>
@@ -755,10 +761,10 @@
 		<!-- end fullscreen search -->
 
 		<!-- JS here -->
-		<script
+		<!-- <script
 			data-cfasync="false"
 			src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-		></script>
+		></script> -->
 		<script src="js/vendor/modernizr-3.5.0.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<script src="js/popper.min.js"></script>
@@ -768,12 +774,13 @@
 		<script src="js/one-page-nav-min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/jquery.meanmenu.min.js"></script>
-		<script src="js/ajax-form.js"></script>
+		<!-- <script src="js/ajax-form.js"></script> -->
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.scrollUp.min.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
+		<script src="./addCart.js"></script>
 	</body>
 </html>
