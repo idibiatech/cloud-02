@@ -4917,7 +4917,15 @@ option {
 .deleteItem:hover {
 	cursor: pointer;
 }
-
+.total {
+	/* background-color: red; */
+	margin: 1rem 0;
+	height: 2rem;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 3rem;
+}
 @media screen and (min-width: 1000px) {
 	.cartItemWrapper {
 		font-size: 2rem;

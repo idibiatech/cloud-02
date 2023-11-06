@@ -1,5 +1,15 @@
 const storedData = JSON.parse(localStorage.getItem("cartPlans"));
 
+const total = document.querySelector(".total");
+// total.textContent = `$ ${
+
+// }`
+let itemTotal = 0;
+const totalFunc = () => {
+	console.log(itemTotal);
+	total.textContent = `Total: $ ${itemTotal.toFixed(2)}`;
+};
+
 if (storedData) {
 	const container = document.querySelector(".cartWrapper");
 	// Clear the container before adding new data to avoid duplication
@@ -28,8 +38,13 @@ if (storedData) {
 		cardElement.appendChild(deleteElement);
 
 		container.appendChild(cardElement);
-	});
+		// totalFunc();
+		itemTotal += parseFloat(card.price);
+		itemTotal = parseFloat(itemTotal.toFixed(2)); // Round to 2 decimal places
 
+		// total.textContent = `Total: $ ${itemTotal}`;
+	});
+	totalFunc();
 	// Add an event listener to the container for the delete action
 	container.addEventListener("click", (event) => {
 		if (event.target.classList.contains("deleteItem")) {
@@ -58,6 +73,9 @@ if (storedData) {
 					cardElement.remove();
 				}
 			}
+			location.reload();
 		}
 	});
 }
+
+// console.log(itemTotal);
