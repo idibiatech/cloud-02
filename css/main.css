@@ -4899,15 +4899,23 @@ option {
 	padding: 1rem;
 	margin: 1rem 0;
 }
-
+.planName {
+	width: 60%;
+}
 .cartItemWrapper div {
-	width: 40%;
+	/* width: 40%; */
 	/* background-color: green; */
 	height: auto;
 	min-height: 4rem;
 	display: flex;
 	justify-content: start;
 	align-items: center;
+}
+
+.deleteItem {
+}
+.deleteItem:hover {
+	cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {
