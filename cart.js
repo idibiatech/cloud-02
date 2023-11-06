@@ -6,7 +6,7 @@ const total = document.querySelector(".total");
 // }`
 let itemTotal = 0;
 const totalFunc = () => {
-	console.log(itemTotal);
+	// console.log(itemTotal);
 	total.textContent = `Total: $ ${itemTotal.toFixed(2)}`;
 };
 
@@ -79,3 +79,4 @@ if (storedData) {
 }
 
 // console.log(itemTotal);
+// totalFunc();
