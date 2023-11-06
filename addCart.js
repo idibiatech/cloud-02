@@ -9,6 +9,6 @@ addCartBtns.forEach((cartBtn) => {
 		cartPlans.push({ plan, price });
 		localStorage.setItem("cartPlans", JSON.stringify(cartPlans));
 
-		// console.log(cartPlans);
+		console.log(cartPlans);
 	});
 });
