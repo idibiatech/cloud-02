@@ -4948,3 +4948,10 @@ option {
 #notes::placeholder {
 	color: red;
 }
+
+.paycard {
+	display: flex;
+}
+.paycard li {
+	margin: 0 0.3rem;
+}
